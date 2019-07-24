@@ -3,10 +3,10 @@
 
 //PCとシリアル通信
 Serial pc(USBTX, USBRX);
+pc.baud(9600);
 
 int main(){
 
-    pc.baud(9600);
     pc.printf("GPSの値取ってみるよ〜〜〜\r\n");
 
     while(1){
